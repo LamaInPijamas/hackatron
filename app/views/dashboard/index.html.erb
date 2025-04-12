@@ -1,0 +1,19 @@
+<!-- app/views/dashboard/index.html.erb -->
+<h1>Dashboard Microgrid</h1>
+
+<div class="section">
+  <h2>Dane Obciążenia (Load Data)</h2>
+  <% load_data = @times_load.zip(@load_values).to_h %>
+  <%= line_chart load_data, xtitle: "Czas", ytitle: "Obciążenie (kW)" %>
+</div>
+
+<div class="section">
+  <h2>Dane Cen i Generacji PV (Price and PV Data)</h2>
+  <% price_data = @times_price.zip(@energy_prices).to_h %>
+  <%= line_chart price_data, xtitle: "Czas", ytitle: "Cena Energii (PLN/MWh)" %>
+
+  <% pv_data = @times_price.zip(@pv_generation).to_h %>
+  <%= line_chart pv_data, xtitle: "Czas", ytitle: "Generacja PV (kWh)" %>
+</div>
+<h1>Testowy wykres</h1>
+<%= line_chart({ "2024-01-01" => 5, "2024-01-02" => 10, "2024-01-03" => 7 }) %>

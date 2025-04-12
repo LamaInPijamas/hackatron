@@ -1,0 +1,12 @@
+<div id="<%= dom_id data_upload %>">
+  <p>
+    <strong>Name:</strong>
+    <%= data_upload.name %>
+  </p>
+
+  <p>
+    <strong>File:</strong>
+    <%= link_to data_upload.file.filename, data_upload.file if data_upload.file.attached? %>
+  </p>
+
+</div>

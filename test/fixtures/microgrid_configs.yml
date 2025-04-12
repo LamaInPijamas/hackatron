@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  load_flexibility: 1.5
+  battery_capacity: 1.5
+  ev_charging_power: 1
+
+two:
+  load_flexibility: 1.5
+  battery_capacity: 1.5
+  ev_charging_power: 1

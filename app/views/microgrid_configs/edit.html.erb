@@ -1,0 +1,12 @@
+<% content_for :title, "Editing microgrid config" %>
+
+<h1>Editing microgrid config</h1>
+
+<%= render "form", microgrid_config: @microgrid_config %>
+
+<br>
+
+<div>
+  <%= link_to "Show this microgrid config", @microgrid_config %> |
+  <%= link_to "Back to microgrid configs", microgrid_configs_path %>
+</div>

@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Microgrid configs" %>
+
+<h1>Microgrid configs</h1>
+
+<div id="microgrid_configs">
+  <% @microgrid_configs.each do |microgrid_config| %>
+    <%= render microgrid_config %>
+    <p>
+      <%= link_to "Show this microgrid config", microgrid_config %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New microgrid config", new_microgrid_config_path %>

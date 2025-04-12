@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @microgrid_config %>
+
+<div>
+  <%= link_to "Edit this microgrid config", edit_microgrid_config_path(@microgrid_config) %> |
+  <%= link_to "Back to microgrid configs", microgrid_configs_path %>
+
+  <%= button_to "Destroy this microgrid config", @microgrid_config, method: :delete %>
+</div>

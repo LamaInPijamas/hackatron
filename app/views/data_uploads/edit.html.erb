@@ -1,0 +1,12 @@
+<% content_for :title, "Editing data upload" %>
+
+<h1>Editing data upload</h1>
+
+<%= render "form", data_upload: @data_upload %>
+
+<br>
+
+<div>
+  <%= link_to "Show this data upload", @data_upload %> |
+  <%= link_to "Back to data uploads", data_uploads_path %>
+</div>

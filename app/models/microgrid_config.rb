@@ -1,0 +1,2 @@
+class MicrogridConfig < ApplicationRecord
+end

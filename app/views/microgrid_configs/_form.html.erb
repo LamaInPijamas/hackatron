@@ -1,0 +1,32 @@
+<%= form_with(model: microgrid_config) do |form| %>
+  <% if microgrid_config.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(microgrid_config.errors.count, "error") %> prohibited this microgrid_config from being saved:</h2>
+
+      <ul>
+        <% microgrid_config.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :load_flexibility, style: "display: block" %>
+    <%= form.text_field :load_flexibility %>
+  </div>
+
+  <div>
+    <%= form.label :battery_capacity, style: "display: block" %>
+    <%= form.text_field :battery_capacity %>
+  </div>
+
+  <div>
+    <%= form.label :ev_charging_power, style: "display: block" %>
+    <%= form.number_field :ev_charging_power %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

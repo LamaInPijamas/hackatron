@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @data_upload %>
+
+<div>
+  <%= link_to "Edit this data upload", edit_data_upload_path(@data_upload) %> |
+  <%= link_to "Back to data uploads", data_uploads_path %>
+
+  <%= button_to "Destroy this data upload", @data_upload, method: :delete %>
+</div>
