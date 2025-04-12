@@ -62,6 +62,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-#added gems
-# gem 'groupdate'
-# gem 'chartkick'
+# added gems
+gem "groupdate"
+gem "chartkick"
